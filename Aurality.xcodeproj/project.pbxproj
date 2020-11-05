@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		057C81A0254A83D0006EF7FE /* Pod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C819F254A83D0006EF7FE /* Pod.swift */; };
+		057C81A4254AD910006EF7FE /* PodReques.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C81A3254AD910006EF7FE /* PodReques.swift */; };
 		2F0DA260252365B100EC813F /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DA25F252365B100EC813F /* data.swift */; };
 		2F0DA2622523666000EC813F /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DA2612523666000EC813F /* SectionCollectionViewCell.swift */; };
 		2F0DA2662523808500EC813F /* PodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DA2652523808500EC813F /* PodViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		057C819F254A83D0006EF7FE /* Pod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pod.swift; sourceTree = "<group>"; };
+		057C81A3254AD910006EF7FE /* PodReques.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodReques.swift; sourceTree = "<group>"; };
 		2F0DA25F252365B100EC813F /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		2F0DA2612523666000EC813F /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		2F0DA2652523808500EC813F /* PodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				2F0DA25F252365B100EC813F /* data.swift */,
+				057C819F254A83D0006EF7FE /* Pod.swift */,
+				057C81A3254AD910006EF7FE /* PodReques.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,8 +219,10 @@
 				2F0DA2712524A7B600EC813F /* PlayViewController.swift in Sources */,
 				2FBAD74D25234DB50048639E /* ViewController.swift in Sources */,
 				2F0DA2682523986E00EC813F /* SearchViewController.swift in Sources */,
+				057C81A4254AD910006EF7FE /* PodReques.swift in Sources */,
 				2F0DA2622523666000EC813F /* SectionCollectionViewCell.swift in Sources */,
 				2FBAD74925234DB50048639E /* AppDelegate.swift in Sources */,
+				057C81A0254A83D0006EF7FE /* Pod.swift in Sources */,
 				2FBAD74B25234DB50048639E /* SceneDelegate.swift in Sources */,
 				2F789ABE252B7D3700466340 /* ProfileViewController.swift in Sources */,
 				2F0DA2662523808500EC813F /* PodViewController.swift in Sources */,

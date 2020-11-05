@@ -11,11 +11,13 @@ import UIKit
 class ViewController: UIViewController {
    
     @IBOutlet weak var testCarousel: UICollectionView!
+    var podRequest = PodRequest()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         testCarousel.delegate = self
         testCarousel.dataSource = self
+        podRequest.getPodcast()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
