@@ -14,26 +14,44 @@ enum PodError:Error {
 }
 
 struct PodRequest {
-    let API_KEY = "41ca466fc4714dc181132fe21a29c833"
     
+    let API_KEY = "41ca466fc4714dc181132fe21a29c833"
     
     func getPodcast() {
         let resourceString = "https://listen-api.listennotes.com/api/v2/just_listen"
         if let resourceURL = URL(string: resourceString) {
             var urlRequest = URLRequest(url: resourceURL)
-            urlRequest.httpMethod = "POST"
+            urlRequest.httpMethod = "GET"
             urlRequest.addValue(API_KEY, forHTTPHeaderField: "X-ListenAPI-Key")
             
-            let dataTask = URLSession.shared.dataTask(with: resourceURL, completionHandler: handle(data:response:error:))
-            
+            let dataTask = URLSession.shared.dataTask(with: resourceURL) { (data, response, error) in
+                if error != nil  {
+                    print(error!)
+                    return
+                }
+                
+                if let safeData = data {
+                    let dataString = String(data: safeData, encoding: .utf8)
+                    print(dataString)
+                    //self.parseJSON(podData: safeData)
+                }
+                
+            }
              dataTask.resume()
         }
-        
-        
-        
     }
     
-    func handle(data: Data?, response: URLResponse?, error: Error?) {
+    func parseJSON(podData: Data) {
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(PodData.self, from: podData)
+            print(decodedData.total)
+        } catch {
+            print(error)
+        }
+    }
+    
+    /*func handle(data: Data?, response: URLResponse?, error: Error?) {
         if error != nil  {
             print(error!)
             return
@@ -45,7 +63,7 @@ struct PodRequest {
         }
     }
     
-    /*func getPodcast (completion: @escaping(Result<[PodInfo], PodError>) -> Void) {
+    func getPodcast (completion: @escaping(Result<[PodInfo], PodError>) -> Void) {
         do {
             var urlRequest = URLRequest(url: resourceURL)
             urlRequest.httpMethod = "POST"

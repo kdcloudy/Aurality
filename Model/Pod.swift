@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct response: Decodable {
+struct PodData: Decodable {
+    var total: Int
+}
+/*struct response: Decodable {
     var Info:PodInfo
 }
 
@@ -19,4 +22,4 @@ struct PodInfo: Decodable {
 
 struct Publisher: Decodable {
     var publisher:String
-}
+}*/
