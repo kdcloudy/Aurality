@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		057C81A0254A83D0006EF7FE /* Pod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C819F254A83D0006EF7FE /* Pod.swift */; };
 		057C81A4254AD910006EF7FE /* PodReques.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C81A3254AD910006EF7FE /* PodReques.swift */; };
+		058EF560255702A200800D4B /* gk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 058EF55F255702A200800D4B /* gk.mp3 */; };
+		058EF566255719A300800D4B /* yc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 058EF565255719A300800D4B /* yc.mp3 */; };
+		058EF56D255799B800800D4B /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058EF56C255799B800800D4B /* tableViewController.swift */; };
 		2F0DA260252365B100EC813F /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DA25F252365B100EC813F /* data.swift */; };
 		2F0DA2622523666000EC813F /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DA2612523666000EC813F /* SectionCollectionViewCell.swift */; };
 		2F0DA2662523808500EC813F /* PodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DA2652523808500EC813F /* PodViewController.swift */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		057C819F254A83D0006EF7FE /* Pod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pod.swift; sourceTree = "<group>"; };
 		057C81A3254AD910006EF7FE /* PodReques.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodReques.swift; sourceTree = "<group>"; };
+		058EF55F255702A200800D4B /* gk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gk.mp3; sourceTree = "<group>"; };
+		058EF565255719A300800D4B /* yc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yc.mp3; sourceTree = "<group>"; };
+		058EF56C255799B800800D4B /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 		2F0DA25F252365B100EC813F /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		2F0DA2612523666000EC813F /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		2F0DA2652523808500EC813F /* PodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +79,7 @@
 				2FBAD74C25234DB50048639E /* ViewController.swift */,
 				2F0DA2652523808500EC813F /* PodViewController.swift */,
 				2F0DA2672523986E00EC813F /* SearchViewController.swift */,
+				058EF56C255799B800800D4B /* tableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -101,6 +108,8 @@
 				2F4C07C52528683200325EF3 /* lewlater.mp4 */,
 				2F4C07C32528681800325EF3 /* officeladies.mp3 */,
 				2F4C07C42528683100325EF3 /* vergecast.mp4 */,
+				058EF55F255702A200800D4B /* gk.mp3 */,
+				058EF565255719A300800D4B /* yc.mp3 */,
 				2F4C07C22528681500325EF3 /* wvfrm.mp4 */,
 				2F112521252C77B9007D560A /* mostlynitpicking.mp3 */,
 			);
@@ -198,6 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058EF566255719A300800D4B /* yc.mp3 in Resources */,
+				058EF560255702A200800D4B /* gk.mp3 in Resources */,
 				2F4C07C82528683200325EF3 /* vergecast.mp4 in Resources */,
 				2FBAD75525234DB90048639E /* LaunchScreen.storyboard in Resources */,
 				2F112522252C77B9007D560A /* mostlynitpicking.mp3 in Resources */,
@@ -219,6 +230,7 @@
 				2F0DA2712524A7B600EC813F /* PlayViewController.swift in Sources */,
 				2FBAD74D25234DB50048639E /* ViewController.swift in Sources */,
 				2F0DA2682523986E00EC813F /* SearchViewController.swift in Sources */,
+				058EF56D255799B800800D4B /* tableViewController.swift in Sources */,
 				057C81A4254AD910006EF7FE /* PodReques.swift in Sources */,
 				2F0DA2622523666000EC813F /* SectionCollectionViewCell.swift in Sources */,
 				2FBAD74925234DB50048639E /* AppDelegate.swift in Sources */,
