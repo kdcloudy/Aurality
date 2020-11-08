@@ -10,19 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    let cellReuseIdentifier = "cell"
+    //let cellReuseIdentifier = "cell"
     
     @IBOutlet weak var testCarousel: UICollectionView!
-    @IBOutlet var tableView: UITableView!
+   // @IBOutlet var tableView: UITableView!
     var podRequest = PodRequest()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         testCarousel.delegate = self
         testCarousel.dataSource = self
-        tableView.delegate = self
-        tableView.dataSource = self
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+//        tableView.delegate = self
+//        tableView.dataSource = self
+//        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         podRequest.getPodcast()
     }
     
@@ -65,27 +65,27 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return sections.count
-    }
-        
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            
-            // create a new cell if needed or reuse an old one
-            let cell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
-            
-            let section = sections[indexPath.row]
-            cell.textLabel?.text = section["title"]
-            
-            return cell
-    }
-        
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            print("You tapped cell number \(indexPath.row).")
-    }
-}
+//extension ViewController: UITableViewDelegate, UITableViewDataSource {
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//            return sections.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//            // create a new cell if needed or reuse an old one
+//            let cell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
+//
+//            let section = sections[indexPath.row]
+//            cell.textLabel?.text = section["title"]
+//
+//            return cell
+//    }
+//
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//            print("You tapped cell number \(indexPath.row).")
+//    }
+//}
     
     
     
