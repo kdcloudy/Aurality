@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1170"
+   LastUpgradeVersion = "1210"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -28,6 +28,44 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2FEF008F2558573B00DECD5F"
+               BuildableName = "AuralityTests.xctest"
+               BlueprintName = "AuralityTests"
+               ReferencedContainer = "container:Aurality.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AuralityTests/testPerformanceExample()">
+               </Test>
+               <Test
+                  Identifier = "testAV">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2FEF00A3255859C700DECD5F"
+               BuildableName = "checkPodcast.xctest"
+               BlueprintName = "checkPodcast"
+               ReferencedContainer = "container:Aurality.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2FEF00B925585A7600DECD5F"
+               BuildableName = "checkUserAuth.xctest"
+               BlueprintName = "checkUserAuth"
+               ReferencedContainer = "container:Aurality.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

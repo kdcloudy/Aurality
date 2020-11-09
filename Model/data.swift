@@ -8,7 +8,11 @@
 
 import UIKit
 
+var favdata = ["The Joe Rogan Experience", "The Ben Shapiro Show", "WVFRM"];
+
+
     let sections = [
+      
         [
             "title": "WVFRM",
             "pub": "Studio71",
@@ -16,6 +20,14 @@ import UIKit
             "image": "Pod1",
             "type": "video",
             "desc": "A tech podcast for the gadget lovers and tech heads among us from the mind of Marques Brownlee, better known as MKBHD. MKBHD has made a name for himself on YouTube reviewing everything from the newest smartphones to cameras to electric cars. Pulling from over 10 years of experience covering the tech industry, MKBHD and co-host Andrew Manganelli will keep you informed and entertained as they take a deep dive into the latest and greatest in tech and what deserves your hard earned cash. New episodes every other week. - For advertising opportunities please reach out to PodcastPartnerships@studio71us.com Link to ad survey: https://bit.ly/2EcYbu4"
+        ],
+        [
+            "title": "The Joe Rogan Experience",
+            "pub": "Joe Rogan",
+            "file": "wvfrm",
+            "image": "Pod0",
+            "type": "audio",
+            "desc": "The official podcast of comedian Joe Rogan. Follow The Joe Rogan Clips show page for some of the best moments from the episodes."
         ],
         [
             "title": "The Vergecast",
@@ -241,6 +253,55 @@ import UIKit
             "type": "audio",
             "desc": "A brand new India came into existence in 1947, and with it came the mighty task of figuring out how everything in India should work. One of our biggest problems? How do we feed everyone in the country? Over a decade in the 1960s, led by MS Swaminathan, India went from being an importer of food grains to one of the biggest producers and exporters of grains, and this changed the face of India, its people and our land. Learn about this incredible turnaround that is often called 'The Green Revolution'."
         ],
+        [
+            "title": "The Overthink Tank",
+            "pub": "Surbhi Bagga",
+            "file": "mostlynitpicking",
+            "image": "Pod14",
+            "type": "audio",
+            "desc": "A podcast where certifiable overthinker and comedian Surbhi Bagga overthinks stuff along with a fun guest! From pop-culture to dating etiquette, human emotions to AI - each week, she over-analyses, overshares and totally overcompensates all for the sake of this podcast."
+        ],
+        [
+            "title": "TED Talks Daily",
+            "pub": "TED Foundation",
+            "file": "mostlynitpicking",
+            "image": "Pod14-1",
+            "type": "audio",
+            "desc": "Every weekday, TED Talks Daily brings you the latest talks in audio. Join host and journalist Elise Hu for thought-provoking ideas on every subject imaginable -- from Artificial Intelligence to Zoology, and everything in between -- given by the world's leading thinkers and creators. With TED Talks Daily, find some space in your day to change your perspectives, ignite your curiosity, and learn something new."
+        ],
+        [
+            "title": "Simple Ken",
+            "pub": "Kenny Sebastian",
+            "file": "mostlynitpicking",
+            "image": "Pod15",
+            "type": "audio",
+            "desc": "Simple Ken is hosted by Kenny Sebastian, A stand up comedian known for his observational humour and quirky stage presence.A simple podcast about tackling the weekly conflicts of a comedian. A strictly 'no advice'podcast."
+        ],
+        [
+            "title": "Mission ISRO with Harsha Bhogle",
+            "pub": "Kenny Sebastian",
+            "file": "mostlynitpicking",
+            "image": "Pod16",
+            "type": "audio",
+            "desc": "Simple Ken is hosted by Kenny Sebastian, A stand up comedian known for his observational humour and quirky stage presence.A simple podcast about tackling the weekly conflicts of a comedian. A strictly 'no advice'podcast."
+        ],
+        [
+            "title": "Dr. Death Season 2",
+            "pub": "Wondery",
+            "file": "mostlynitpicking",
+            "image": "Pod17",
+            "type": "audio",
+            "desc": "We’re at our most vulnerable when we go to our doctors. We trust the person at the other end of that scalpel. We trust the hospital. We trust the system. Christopher Duntsch was a neurosurgeon who radiated confidence. He claimed he was the best in Dallas. If you had back pain, and had tried everything else, Dr. Duntsch could give you the spine surgery that would take your pain away. But soon his patients started to experience complications, and the system failed to protect them. Which begs the question: who - or what - is that system meant to protect? From Wondery, the network behind the hit podcast Dirty John, DR. DEATH is a story about a charming surgeon, 33 patients and a spineless system. Reported and hosted by Laura Beil."
+        ],
+        [
+            "title": "The Ben Shapiro Show",
+            "pub": "The Daily Wire",
+            "file": "mostlynitpicking",
+            "image": "Pod18",
+            "type": "audio",
+            "desc": "Tired of the lies? Tired of the spin? Are you ready to hear the hard-hitting truth in comprehensive, conservative, principled fashion? The Ben Shapiro Show brings you all the news you need to know in the most fast moving daily program in America. Ben brutally breaks down the culture and never gives an inch! Monday thru Friday."
+        ],
+        
         
     ]
 

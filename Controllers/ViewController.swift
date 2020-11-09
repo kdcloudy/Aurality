@@ -8,12 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-   
-    //let cellReuseIdentifier = "cell"
+class ViewController: UIViewController{
     
     @IBOutlet weak var testCarousel: UICollectionView!
-   // @IBOutlet var tableView: UITableView!
+  
     var podRequest = PodRequest()
     
     override func viewDidLoad() {
@@ -21,9 +19,14 @@ class ViewController: UIViewController {
         testCarousel.delegate = self
         testCarousel.dataSource = self
 //        tableView.delegate = self
-//        tableView.dataSource = self
-//        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+//        tableView.delegate = self
         podRequest.getPodcast()
+        
+        if traitCollection.forceTouchCapability == .available {
+            print("Force Touch Present")
+        } else {
+            print("Force Touch Absent")
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,6 +42,9 @@ class ViewController: UIViewController {
             
         }
     }
+   
+    
+    
 }
 
 
@@ -65,28 +71,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
 }
 
-//extension ViewController: UITableViewDelegate, UITableViewDataSource {
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//            return sections.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//            // create a new cell if needed or reuse an old one
-//            let cell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
-//
-//            let section = sections[indexPath.row]
-//            cell.textLabel?.text = section["title"]
-//
-//            return cell
-//    }
-//
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//            print("You tapped cell number \(indexPath.row).")
-//    }
-//}
-    
+
+
+  
     
     
 

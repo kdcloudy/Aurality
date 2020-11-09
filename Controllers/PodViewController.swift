@@ -15,6 +15,7 @@ class PodViewController: UIViewController {
     @IBOutlet weak var PodLabel: UILabel!
     var section: [String: String]!
     @IBOutlet weak var pubLabel: UILabel!
+    @IBOutlet weak var AddToLib: UIButton!
     
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var podDesc: UITextView!
@@ -29,6 +30,14 @@ class PodViewController: UIViewController {
         title = section["title"]
         //print("from screen2", itemPath)
         
+    }
+    
+    
+    @IBAction func addToLibPress(_ sender: Any) {
+        //let destVC = storyboard?.instantiateViewController(withIdentifier: "LibraryViewController") as! LibraryViewController
+        favdata.append(section["title"]!)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+        //destVC.tableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -67,6 +76,11 @@ class PodViewController: UIViewController {
         
         
     }
+    
+    
+    
+    
+    
 }
    
 

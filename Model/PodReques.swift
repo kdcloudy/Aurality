@@ -45,7 +45,7 @@ struct PodRequest {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(PodData.self, from: podData)
-            print(decodedData.total)
+            print(decodedData)
         } catch {
             print(error)
         }

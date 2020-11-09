@@ -8,18 +8,10 @@
 
 import Foundation
 
-struct PodData: Decodable {
-    var total: Int
+class PodData: Decodable{
+    var title: String
+    
+    init(title: String){
+        self.title = title
+    }
 }
-/*struct response: Decodable {
-    var Info:PodInfo
-}
-
-struct PodInfo: Decodable {
-    var title:String
-    var podcast:Publisher
-}
-
-struct Publisher: Decodable {
-    var publisher:String
-}*/
